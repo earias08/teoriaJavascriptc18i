@@ -6,7 +6,7 @@ console.log(numero1); //50
 console.log(numero2); //30
 
 /* Estructura if
-if(condicion logica){
+if(condicion logica && condicion logica ){
     todas las lineas de codigo que quiera que haga mi programa si la condicion es verdadera
 }else{
     todas las lineas de codigo que quiero que haga el programa si la condicion es falsa
