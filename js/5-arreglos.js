@@ -10,27 +10,15 @@ document.write(series[0]);
 console.log(series.length);
 
 //recorrer elemento por elemento un arreglo
-for(let posicion = 0; posicion < series.length ; posicion++ ){
-    document.write('<br>'+ series[posicion]);
-}
+mostrarArreglo('recorrer elemento por elemento un arreglo');
 
 // agregar un elemento al final del arreglo
 series.push('Breaking bad');
-
-document.write('<br><br><b>Arreglo series con nuevo elemento</b><br>');
-
-for(let posicion = 0; posicion < series.length ; posicion++ ){
-    document.write('<br>'+ series[posicion]);
-}
+mostrarArreglo('agregar un elemento al final del arreglo')
 
 // agregar un elemento en una posicion particular
 series.splice(1, 0,'GOT'); //(posicion del elemento, cantidad de elementos a borrar, el elemento que quiero agregar)
-
-document.write('<br><br><b>agregar un elemento en una posicion particular</b><br>');
-
-for(let posicion = 0; posicion < series.length ; posicion++ ){
-    document.write('<br>'+ series[posicion]);
-}
+mostrarArreglo('agregar un elemento en una posicion particular')
 
 // eliminar un elemento del arreglo
 series.splice(5,1); //(posicion del elemento, cantidad de elementos a borrar)
