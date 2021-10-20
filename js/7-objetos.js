@@ -22,6 +22,7 @@ let usuarioJony = {
     }
 }
 
+
 // mostrar un objeto
 console.log(usuarioJony);
 
@@ -45,3 +46,13 @@ delete usuarioJony.estado;
 
 // usar un metodo
 usuarioJony.login();
+
+// mostrar todas las propiedades de un objeto
+let claves = Object.keys(usuarioJony); // ['localidad', 'email'...]
+console.log(claves)
+
+for(let posicion=0 ; posicion < claves.length ; posicion++){
+    // document.write('<br>'+ claves[posicion])
+    document.write('<br>'+claves[posicion]+': '+ usuarioJony[claves[posicion]]);
+}
+
